@@ -4,7 +4,7 @@
 
 <!-- You can add badges here later, e.g., ArXiv, License, HuggingFace -->
 <a href="https://arxiv.org/abs/2601.08430">
-    <img src="https://img.shields.io/badge/2601.08430.svg" alt="Paper"/>
+    <img src="https://img.shields.io/badge/arXiv-2601.08430-b31b1b.svg"" alt="Paper"/>
 </a>
 <a href="https://huggingface.co/datasets/sojuL/RubricHub_v1">
     <img src="https://img.shields.io/badge/Data-HuggingFace-yellow" alt="Rubrichub"/>
