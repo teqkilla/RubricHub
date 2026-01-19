@@ -1,24 +1,18 @@
-这是一份为您生成的 GitHub `README.md` 草稿。它包含了论文的核心亮点、方法介绍、数据集统计、实验结果以及您要求的关于代码开源的声明。
-
-您可以直接复制以下内容到您的 `README.md` 文件中。
-
-***
-
 # RubricHub: A Comprehensive and Highly Discriminative Rubric Dataset via Automated Coarse-to-Fine Generation
 
 <div align="center">
 
 <!-- You can add badges here later, e.g., ArXiv, License, HuggingFace -->
-[![arXiv](https://img.shields.io/badge/arXiv-25xx.xxxxx-b31b1b.svg)](https://arxiv.org/abs/25xx.xxxxx)
+[![arXiv](https://img.shields.io/badge/arXiv-25xx.xxxxx-b31b1b.svg)]([https://arxiv.org/abs/25xx.xxxxx](https://arxiv.org/abs/2601.08430))
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
-[![Data](https://img.shields.io/badge/Data-HuggingFace-yellow)](https://huggingface.co/)
+[![Data](https://img.shields.io/badge/Data-HuggingFace-yellow)]([https://huggingface.co/](https://huggingface.co/datasets/sojuL/RubricHub_v1))
 
 </div>
 
 ## 📢 News
 *   **[2026-01-19]** 🔥 **Code and Data Coming Soon!** We are preparing the release of the **data synthesis code** and the **post-training (RuFT & RuRL) code**. Stay tuned!
-*   **[2026-01-12]** RubricHub dataser is released, see https://huggingface.co/datasets/sojuL/RubricHub_v1.
-*   **[2026-01-12]** RubricHub paper is released.
+*   **[2026-01-17]** RubricHub dataser is released, see https://huggingface.co/datasets/sojuL/RubricHub_v1.
+*   **[2026-01-12]** RubricHub paper is released, see https://arxiv.org/abs/2601.08430.
   
 
 ## 📖 Introduction
