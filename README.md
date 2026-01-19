@@ -3,10 +3,9 @@
 <div align="center">
 
 <!-- You can add badges here later, e.g., ArXiv, License, HuggingFace -->
-[![arXiv](https://img.shields.io/badge/arXiv-25xx.xxxxx-b31b1b.svg)]([https://arxiv.org/abs/25xx.xxxxx](https://arxiv.org/abs/2601.08430))
+[![arXiv](https://img.shields.io/badge/arXiv-25xx.xxxxx-b31b1b.svg)]([https://arxiv.org/abs/2601.08430])
+[![Data](https://img.shields.io/badge/Data-HuggingFace-yellow)]([https://huggingface.co/datasets/sojuL/RubricHub_v1])
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
-[![Data](https://img.shields.io/badge/Data-HuggingFace-yellow)]([https://huggingface.co/](https://huggingface.co/datasets/sojuL/RubricHub_v1))
-
 </div>
 
 ## 📢 News
