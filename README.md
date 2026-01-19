@@ -18,7 +18,7 @@
 
 ## 📢 News
 *   **[2026-01-19]** 🔥 **Code and Data Coming Soon!** We are preparing the release of the **data synthesis code** and the **post-training (RuFT & RuRL) code**. Stay tuned!
-*   **[2026-01-17]** RubricHub dataser is released, see https://huggingface.co/datasets/sojuL/RubricHub_v1.
+*   **[2026-01-17]** RubricHub dataset is released, see https://huggingface.co/datasets/sojuL/RubricHub_v1.
 *   **[2026-01-12]** RubricHub paper is released, see https://arxiv.org/abs/2601.08430.
   
 
@@ -58,7 +58,7 @@ RubricHub contains approximately **110k** high-quality query-rubric pairs across
 The dataset features high-density supervision, with complex domains like Writing and Medical averaging over 30 fine-grained criteria per query.
 
 ## 📈 Experiments
-
+![Pipeline](image/results.png)
 We validated RubricHub using Qwen3 base models. The results demonstrate significant improvements across all domains.
 
 **Key Result:** On **HealthBench**, our Qwen3-14B (post-trained with RuFT → RuRL) achieves a score of **69.3**, outperforming **GPT-5 (67.2)**.
