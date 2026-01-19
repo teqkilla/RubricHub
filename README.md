@@ -34,7 +34,7 @@ Based on RubricHub, we propose a two-stage post-training pipeline:
 Experimental results show that our post-trained **Qwen3-14B** achieves **SOTA results on HealthBench (69.3)**, surpassing proprietary frontier models such as **GPT-5**.
 
 ## 🚀 Methodology
-![Pipeline](assets/pipeline.png)
+![Pipeline](assets/method.png)
 
 ### Automated Coarse-to-Fine Rubric Generation
 Existing rubrics often suffer from scalability bottlenecks and low discriminability. Our framework addresses this through three stages:
@@ -46,8 +46,9 @@ Existing rubrics often suffer from scalability bottlenecks and low discriminabil
 
 
 ## 📊 RubricHub Dataset
-RubricHub contains approximately **110k** high-quality query-rubric pairs across five major domains:
+![Pipeline](assets/dataset.png)
 
+RubricHub contains approximately **110k** high-quality query-rubric pairs across five major domains:
 *   **🏥 Medical:** 27.1%
 *   **🔬 Science:** 27.1% 
 *   **📝 Instruction Following:** 
