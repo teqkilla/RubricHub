@@ -17,7 +17,8 @@
 
 
 ## 📢 News
-*   **[2026-02-03]** 🔥 **Data synthesis code released.** See `data_synthesis_final/README.md`. Post-training (RuFT & RuRL) code is coming soon.
+*   **[2026-02-03]** 🔥 **Training code released.** Refer [RuscaRL](https://github.com/IANNXANG/RuscaRL)  for  RuRL, [verl-rubric](https://github.com/DoYangTan/verl-rubric) for asynchronous RuRL, and [LLamaFactory](https://github.com/hiyouga/LlamaFactory) for RuFT training. The remaining code that integrates rule-based scoring will be released soon.
+*   **[2026-02-03]** 🔥 **Data synthesis code released.** See `data_synthesis_final/README.md`. 
 *   **[2026-01-17]** RubricHub dataset is released, see https://huggingface.co/datasets/sojuL/RubricHub_v1.
 *   **[2026-01-12]** RubricHub paper is released, see https://arxiv.org/abs/2601.08430.
   
