@@ -17,7 +17,7 @@
 
 
 ## 📢 News
-*   **[2026-02-03]** 🔥 **Training recipes (external) are now available.** This repo currently focuses on data synthesis and does **not** ship an end-to-end training framework. For RuRL, refer to [RuscaRL](https://github.com/IANNXANG/RuscaRL) (sync) or [verl-rubric](https://github.com/DoYangTan/verl-rubric) (async). For RuFT/SFT, refer to [LlamaFactory](https://github.com/hiyouga/LlamaFactory). Our RubricHub rule-based scorer/grader integration for RuRL (incl. instruction-following rules) is being cleaned up and will be released soon.
+*   **[2026-02-03]** 🔥 **Training recipes (external) are now available.**  For RuRL, refer to [RuscaRL](https://github.com/IANNXANG/RuscaRL) (sync) or [verl-rubric](https://github.com/DoYangTan/verl-rubric) (async). For RuFT/SFT, refer to [LlamaFactory](https://github.com/hiyouga/LlamaFactory). Our RubricHub rule-based scorer/grader integration for RuRL (incl. instruction-following rules) is being cleaned up and will be released soon.
 *   **[2026-02-03]** 🔥 **Data synthesis code released.** See `data_synthesis_final/README.md`. 
 *   **[2026-01-17]** RubricHub dataset is released, see https://huggingface.co/datasets/sojuL/RubricHub_v1.
 *   **[2026-01-12]** RubricHub paper is released, see https://arxiv.org/abs/2601.08430.
@@ -104,10 +104,8 @@ For pipeline architecture and implementation details, see `data_synthesis_final/
 ### Training (RuFT & RuRL)
 This repo currently does **not** include the full post-training implementation (grader + training loop). You can still reproduce the RuFT/RuRL pipeline using existing open-source trainers:
 
-- **RuFT (Rubric-based Rejection Sampling Fine-Tuning):** sample multiple candidate answers per query, score them with a rubric grader, keep high-scoring answers to form SFT pairs, then run SFT with [LlamaFactory](https://github.com/hiyouga/LlamaFactory).
-- **RuRL (Rubric-based Reinforcement Learning):** turn each criterion into a binary decision `b_i∈{0,1}` (via a rules/LLM grader), aggregate reward as `r = (Σ w_i b_i) / (Σ w_i)`, then run RL with [RuscaRL](https://github.com/IANNXANG/RuscaRL) (sync) or [verl-rubric](https://github.com/DoYangTan/verl-rubric) (async).
-
-For details on how `final.parquet` connects to RuFT/RuRL, see the section “与 RuFT / RuRL 的衔接” in `data_synthesis_final/README.md`.
+- **RuFT (Rubric-based Rejection Sampling Fine-Tuning):** run SFT with [LlamaFactory](https://github.com/hiyouga/LlamaFactory).
+- **RuRL (Rubric-based Reinforcement Learning):**  run RL with [RuscaRL](https://github.com/IANNXANG/RuscaRL) (sync) or [verl-rubric](https://github.com/DoYangTan/verl-rubric) (async).
 
 ## 🖊️ Citation
 
