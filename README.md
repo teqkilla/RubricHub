@@ -20,7 +20,7 @@
 *   **[2026-02-03]** 🔥 **Data synthesis code released.** See `data_synthesis_final/README.md`. Post-training (RuFT & RuRL) code is coming soon.
 *   **[2026-01-17]** RubricHub dataset is released, see https://huggingface.co/datasets/sojuL/RubricHub_v1.
 *   **[2026-01-12]** RubricHub paper is released, see https://arxiv.org/abs/2601.08430.
-  
+
 
 ## 📖 Introduction
 Reinforcement Learning with Verifiable Rewards (RLVR) has shown great success in math and coding. However, open-ended generation remains challenging due to the lack of ground truth.
