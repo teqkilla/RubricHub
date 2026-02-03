@@ -85,7 +85,7 @@ pip install -U openai tqdm pyarrow
 4) Edit `run_data_synthesis.sh` (top “1) Fill here”):
 - fill input/output paths and `QUESTION_COLUMN`
 - **for each model slot** (`REFERENCE_*`, `RESPONSE_*`, `RUBRIC_*`, `MERGE_*`, `AUGMENT_*`), fill its `*_BASE_URL`, `*_API_KEY`, and `*_MODEL`
-  - if your OpenAI-compatible server ignores API keys, set `*_API_KEY="dummy"`
+  - if your OpenAI-compatible server ignores API keys, set `*_API_KEY` to **any non-empty string** (e.g., `"dummy"`) since the OpenAI SDK requires it
 
 5) Run:
 

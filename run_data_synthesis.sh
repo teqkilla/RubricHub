@@ -33,7 +33,8 @@ OUTPUT_DIR="local/data_synthesis_output"
 # -------------------------
 # This pipeline is designed to allow different steps to use different providers/endpoints.
 # Fill `*_BASE_URL` + `*_API_KEY` for each model slot.
-# - If your endpoint doesn't require a key, set `*_API_KEY="dummy"` (OpenAI SDK still needs a non-empty string).
+# - If your endpoint doesn't require a key, set `*_API_KEY` to any non-empty string (e.g., "dummy").
+#   (OpenAI SDK expects an API key string even if your server ignores it.)
 REFERENCE_API_KEY=""
 REFERENCE_BASE_URL=""
 
