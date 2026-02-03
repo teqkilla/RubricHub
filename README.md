@@ -17,7 +17,7 @@
 
 
 ## 📢 News
-*   **[2026-01-19]** 🔥 **Code and Data Coming Soon!** We are preparing the release of the **data synthesis code** and the **post-training (RuFT & RuRL) code**. Stay tuned!
+*   **[2026-02-02]** 🔥 **Data synthesis code released.** See `run_data_synthesis.sh` and `data_synthesis_final/`. Post-training (RuFT & RuRL) code is coming soon.
 *   **[2026-01-17]** RubricHub dataset is released, see https://huggingface.co/datasets/sojuL/RubricHub_v1.
 *   **[2026-01-12]** RubricHub paper is released, see https://arxiv.org/abs/2601.08430.
   
@@ -65,18 +65,43 @@ We validated RubricHub using Qwen3 base models. The results demonstrate signific
 
 
 ## 🛠️ Usage
-*(Coming Soon)*
+### Data Synthesis (Coarse-to-Fine Rubric Generation)
 
-### Installation
-*(Coming Soon)*
+1) (Recommended) Create a clean env:
 
-### Data Synthesis
-The code for the **Coarse-to-Fine Rubric Generation** pipeline will be released here. This will allow users to generate high-quality rubrics for their own datasets.
+```bash
+conda create -n rubrichub python=3.10 -y
+conda activate rubrichub
+```
+
+2) Install deps for the data synthesis pipeline:
+
+```bash
+pip install -U openai tqdm pyarrow
+```
+
+3) Prepare an input JSONL, and set `QUESTION_COLUMN` to the field name that contains your prompt text (it can be `question`, `prompt`, `instruction`, etc.).
+
+4) Edit `run_data_synthesis.sh` (top “1) Fill here”):
+- fill input/output paths and `QUESTION_COLUMN`
+- **for each model slot** (`REFERENCE_*`, `RESPONSE_*`, `RUBRIC_*`, `MERGE_*`, `AUGMENT_*`), fill its `*_BASE_URL`, `*_API_KEY`, and `*_MODEL`
+  - if your OpenAI-compatible server ignores API keys, set `*_API_KEY="dummy"`
+
+5) Run:
+
+```bash
+./run_data_synthesis.sh
+```
+
+Outputs will be written to `$OUTPUT_DIR/`:
+- `final.parquet` (main artifact)
+- `final.jsonl` (same content, easier to inspect)
+- `step0_reference.jsonl` ~ `step4_augmented.jsonl` (intermediates for resume/debug)
+
+For pipeline architecture and implementation details, see `data_synthesis_final/README.md`.
 
 ### Training (RuFT & RuRL)
-We will provide scripts to reproduce our post-training pipeline using the `RubricHub` dataset:
-1.  **RuFT:** Rejection sampling using rubric scores as filters.
-2.  **RuRL:** Reinforcement learning using rubric scores as dense rewards (built on `verl` framework).
+*(Coming Soon)*
 
 ## 🖊️ Citation
 

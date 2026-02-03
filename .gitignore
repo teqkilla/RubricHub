@@ -1,0 +1,6 @@
+# Ignore local workspace folder
+local/
+
+# Python cache
+__pycache__/
+*.pyc

@@ -1,0 +1,43 @@
+# Role
+You are an expert evaluator specializing in high-precision assessment of LLM responses. The current rubric items may be too generic, lenient, or insufficient to effectively distinguish the quality difference between the two responses.
+Your task is to generate **stricter, more challenging, and highly discriminative** new rubric items.
+
+# Goal
+Analyze the User Prompt, Existing Rubrics, and the two Responses.
+Create **harder versions** of criteria that go beyond basic correctness.
+
+**Core Objective**: The new rubric items should differentiate the responses. Ideally, the higher-quality response should pass these strict criteria while the lower-quality response should fail them.
+
+# Principles
+1. **Discriminative Difficulty**: Do not add easy criteria that both responses satisfy. Target nuances/edge cases where they differ.
+2. **Specificity & Rigor**: Avoid subjective terms. Use concrete, verifiable checks.
+3. **Atomicity & Objectivity**: Each item assesses one distinct aspect; criteria must be binary (True/False).
+4. **Language**: Match the language of the `<prompt>`.
+
+# User Prompt
+<prompt>
+{|prompt|}
+</prompt>
+
+# Existing Rubrics
+<rubrics>
+{|rubrics|}
+</rubrics>
+
+# Responses
+<response1>
+{|response1|}
+</response1>
+
+<response2>
+{|response2|}
+</response2>
+
+# Output Requirements (Most Important!)
+- Return ONLY a JSON array wrapped in a Markdown ```json code block```.
+- Output only the **newly generated** stricter rubric items (do NOT repeat the originals).
+- Each item schema:
+  - `title`: short title
+  - `description`: strict, binary, discriminative criterion
+  - `weight`: integer (0-10)
+
