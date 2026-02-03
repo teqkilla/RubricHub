@@ -102,7 +102,7 @@ Outputs will be written to `$OUTPUT_DIR/`:
 For pipeline architecture and implementation details, see `data_synthesis_final/README.md`.
 
 ### Training (RuFT & RuRL)
-This repo currently does **not** include the full post-training implementation (grader + training loop). You can still reproduce the RuFT/RuRL pipeline using existing open-source trainers:
+You can  reproduce the RuFT/RuRL pipeline using existing open-source trainers:
 
 - **RuFT (Rubric-based Rejection Sampling Fine-Tuning):** run SFT with [LlamaFactory](https://github.com/hiyouga/LlamaFactory).
 - **RuRL (Rubric-based Reinforcement Learning):**  run RL with [RuscaRL](https://github.com/IANNXANG/RuscaRL) (sync) or [verl-rubric](https://github.com/DoYangTan/verl-rubric) (async).
